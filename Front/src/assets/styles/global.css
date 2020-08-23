@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+}
+body {
+  background: #f0f0f7;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../../assets/image/fabrica-bg.jpg") no-repeat center center
+    fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}

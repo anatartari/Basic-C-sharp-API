@@ -1,0 +1,18 @@
+#Fabrics .table-fabric {
+  margin-top: 2rem;
+  font: 400 1.2rem Hind Siliguri;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Fabrics .info-table img {
+  height: 1.7rem;
+}
+
+#Fabrics .info-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 4%;
+}

@@ -1,0 +1,21 @@
+#Fabrics .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font: 600 1.6rem Hind Siliguri;
+}
+
+#Fabrics .container {
+  background-color: white;
+  font: 400 1.6rem Hind Siliguri;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+}
+
+#Fabrics .no-fabrics {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}

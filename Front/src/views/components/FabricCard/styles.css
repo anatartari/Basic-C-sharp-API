@@ -1,0 +1,40 @@
+.card-header {
+  font: 400 1.5rem Hind Siliguri;
+}
+
+.card-text {
+  font: 400 1rem Hind Siliguri;
+}
+
+.go-back {
+  margin-top: 2rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: white;
+  font: 400 1.2rem Hind Siliguri;
+  color: red;
+  transition: background-color 0.2s;
+}
+
+.go-back:hover {
+  background-color: #efecec;
+}
+
+.add-new-car {
+  margin-top: 1.5rem;
+}
+
+.add-new-car button {
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: white;
+  font: 400 1.2rem Hind Siliguri;
+  color: green;
+  transition: background-color 0.2s;
+}
+
+.add-new-car button:hover {
+  background-color: #efecec;
+}
