@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using WebApiFrabricas.Data;
 
 namespace WebApiFrabricas
@@ -28,6 +21,12 @@ namespace WebApiFrabricas
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
+            /*
+             services.AddCors(option => {
+                option.AddPolicy("AllowSpecificOrigin", policy => policy.WithOrigins("http://macoratti.net"));
+                option.AddPolicy("AllowGetMethod", policy => policy.WithMethods("GET"));
+            });
+            */
             services.AddControllers();
 
             services.AddDbContext<WebApiFrabricasContext>(options =>
@@ -48,6 +47,7 @@ namespace WebApiFrabricas
 
             app.UseAuthorization();
             app.UseCors(option => option.AllowAnyOrigin());
+
 
             app.UseEndpoints(endpoints =>
             {
